@@ -21,15 +21,35 @@
     </ul>
 
   <p>Next, I am going to add/multiply the following two numbers and display the result, all with JavaScript</p>
-  <label>First number:</label> 
-  <input type="text" id="num1">
-  <label>Second number:</label> 
-  <input type="text" id="num2">
-  <p style="display: none;" id="res1">Therefore, the sum of the two of those numbers is: <span id= "sum">(placeholder for the answer)</span></p>
-  <p style="display: none;" id="res2">Therefore, the product of the two of those numbers is: <span id= "product">(placeholder for the answer)</span></p>
-  <br>
-  <button type="submit" id="sumButton" onclick="displaySum();">Click to add!</button>
-  <button type="submit" id="productButton" onclick="displayProduct();">Click to multiply!</button>
+
+  <div class="container">
+    <div class="form-group">
+      <label>First number:</label> 
+      <div class="form-input">
+        <input type="text" id="num1">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label>Second number:</label>
+      <div class="form-input">
+        <input type="text" id="num2">
+      </div> 
+    </div>
+    
+    <div> 
+      <p style="display: none;" id="res1">Therefore, the sum of the two of those numbers is: <b><span id="sum"></span></b></p>
+      <p style="display: none;" id="res2">Therefore, the product of the two of those numbers is: <b><span id= "product"></span></b></p>
+    </div>
+    
+
+    <div class="form-button"> 
+      <button type="submit" id="sumButton" onclick="displaySum();">Click to add</button>
+      <button type="submit" id="productButton" onclick="displayProduct();">Click to multiply</button>
+    </div>
+    
+  </div>
+  
 
   <script src="./script/app.js"></script>
 </body>

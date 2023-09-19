@@ -14,3 +14,33 @@ em {
   background-color: #000000;
   color: #ffffff;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-input {
+  height: 20px;
+  width: 200px;
+}
+
+input {
+  height: 100%;
+  width: 100%;
+}
+
+.form-button {
+  display: flex;
+  gap: 15px;
+}
